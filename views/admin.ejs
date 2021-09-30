@@ -1,0 +1,54 @@
+<%- include('includes/topmenu') %>
+
+    <!--top-Page-->
+    <div id="banner">
+        
+<div id="container" style="display: flex;flex-direction: row;justify-content: center;align-items: center">
+
+
+
+<div id="rightBox">
+<div class="table" style="display: flex;flex-direction: row;justify-content: space-around;">
+<div style="width:25%">Owner</div>
+    <div style="width:25%">Order</div>
+    <div style="width:25%">Sales</div>
+    <div style="width:25%">Details</div>
+    <div style="width:25%">Cancel</div>
+</div>
+<hr style="width:100%;border:1px solid #fff">
+<%
+    for(let i=0;i<orders.length;i++){
+    %>
+<div class="table" style="display: flex;flex-direction: row;justify-content: space-around;">
+<div style="width:25%"><%=orders[i].owner%></div>
+    <div style="width:25%"><%=orders[i].item%></div>
+    <div style="width:25%"><%=orders[i].price%></div>
+    <div style="width:25%"><%=orders[i].details%></div>
+    %>
+    <% if(orders[i].item!="there is no orders yet" || orders[i].item!="you don't have access"){ %>
+    <div style="width:25%"><a href="admin/delete/<%=orders[i].id%>"><img src="pics/bin.png" style="border-radius:50%; width:30px; height:30px; border:3px solid #cb1200"></a></div>
+    <%}%>
+</div>
+<hr style="width:100%;border:1px solid #fff">
+<%
+}
+%>
+</div>
+
+</div>
+        
+    </div>
+<!--Guide-section-->
+
+
+
+
+
+
+
+
+    <!--Footer-->
+
+</body>
+</html>
+

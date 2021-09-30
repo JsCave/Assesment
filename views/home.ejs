@@ -1,0 +1,68 @@
+
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width , initial-scale=1">
+<meta name="description" content="Resturant">
+<title>Resturant: Delicious Food</title>
+<link rel="stylesheet" href="indexstyle.css">
+<meta name="robots" content="follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large"/>
+<link rel="canonical" href="https://castleswar.com/" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Castles War" />
+<meta property="og:description" content="Castles War : Online Strategy Game" />
+<meta property="og:url" content="https://castleswar.com/" />
+<meta property="og:site_name" content="Castles War" />
+<meta property="og:updated_time" content="2021-06-25T22:24:56-05:00" />
+<meta property="og:image" content="https://myforexfunds.com/wp-content/uploads/2021/05/preview.jpg" />
+<meta property="og:image:secure_url" content="https://myforexfunds.com/wp-content/uploads/2021/05/preview.jpg" />
+<meta property="og:image:width" content="1363" />
+<meta property="og:image:height" content="1080" />
+<meta property="og:image:alt" content="Catles War" />
+<meta property="og:image:type" content="image/jpeg" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Castles War : Online Strategy Game" />
+<meta name="twitter:description" content="Castles War : Online Browser Strategy Game" />
+<meta name="twitter:image" content="https://myforexfunds.com/wp-content/uploads/2021/05/preview.jpg" />
+</head>
+<body>
+<div id="loginBox">
+<form method="post" action="/login" id="loginForm">
+<p>UserName:</p><input type="text" placeholder="username" name="username">
+<p>Password:</p><input type="password" placeholder="Password" name="password">
+<input type="hidden" name="_csrf" value="<%=csrfToken%>">
+<input type="Submit" value="Login" class="button">
+</form>
+</div>
+
+<div id="container">
+<%
+if(action.length){
+   action.forEach(function(error){%>
+<div style="background-color: red; color:#fff"><%=error%></div>
+<%})}%>
+
+
+
+
+<div id="registerBox">
+   <h2>Register Now!</h2>
+   <h2>And Taste Delicious Food!</h2>
+   <form method="post" action="/register" id="registerForm">
+   <b>UserName:</b><input type="text" placeholder="Username" name="username">
+   <b>Password:</b><input type="password" placeholder="Password" name="password">
+   <b>Email:</b><input type="text" placeholder="Email@Email.com" name="email">
+   <input type="hidden" name="_csrf" value="<%=csrfToken%>">
+   <input type="Submit" value="Register" class="button">
+</form>
+</div>
+
+
+
+</div>
+<footer>All Copy rights Reserved <%= new Date().getFullYear() %></footer>
+</body>
+</html>
+

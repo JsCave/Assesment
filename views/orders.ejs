@@ -1,0 +1,40 @@
+<%- include('includes/topmenu') %>
+
+    <!--top-Page-->
+    <div id="banner">
+        
+<div id="container" style="display: flex;flex-direction: row;justify-content: center;align-items: center">
+
+
+
+<div id="rightBox">
+<%
+    for(let i=0;i<orders.length;i++){
+    %>
+<div class="table" style="display: flex;flex-direction: row;justify-content: space-around;">
+    <div style="width:25%"><%=orders[i].item%></div>
+    <div style="width:25%"><%=orders[i].price%></div>
+</div>
+<hr style="width:100%;border:1px solid #fff">
+<%
+}
+%>
+</div>
+
+</div>
+        
+    </div>
+<!--Guide-section-->
+
+
+
+
+
+
+
+
+    <!--Footer-->
+
+</body>
+</html>
+

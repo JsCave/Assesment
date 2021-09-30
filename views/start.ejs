@@ -1,0 +1,45 @@
+<%- include('includes/topmenu') %>
+
+    <!--top-Page-->
+    <div id="banner">
+        
+<div id="container">
+
+
+<div id="leftBox">
+<h1>Balance</h1>
+<h3><%=user.balance%> L.E</h3>
+
+</div>
+
+<div id="rightBox">
+<div><%=action%></div>
+<h3>Welcome <%=user.username%> , What you like to order?</h3>
+
+
+<div id="products">
+<%
+   products.forEach(function(product){%>
+<div class=card>
+<img src="pics/<%=product.pic%>" alt="<%=product.name%>" width="100" height="100" style="margin:0px">
+<h4 style="margin:0px"><%=product.name%></h4>
+<p style="margin:0px"><%=product.price%> L.E</p>
+<a href="/cart/<%=product.id%>" style="font-weight:bold; background-color:yellow;color:#000;margin:0px">Order</a>
+</div>
+<%})%>
+
+
+</div>
+
+</div>
+        
+    </div>
+<!--Guide-section-->
+
+
+
+    <!--Footer-->
+
+</body>
+</html>
+

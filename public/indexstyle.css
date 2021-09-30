@@ -1,0 +1,116 @@
+body{
+    background-image: url("pics/background.jpg");
+    background-repeat: no-repeat;
+    min-height:90vh;
+    background-position: center center;
+    background-size: cover;
+    color:#fff;
+}
+
+#guide{
+	background-color: darkblue;
+	color:darkorange;
+	border-radius: 20%;
+	padding: 20px;
+	font:20px;
+	font-weight: bold;
+}
+#loginBox{
+	background-color: #000;
+	color: #fff;
+	align-items: center;
+	justify-content: center;
+}
+#loginForm{
+	display: flex;
+	flex-direction: row;
+		align-items: center;
+	justify-content: center;
+}
+#registerForm{
+	display: flex;
+	flex-direction: column;
+		align-items: center;
+	justify-content: center;
+}
+.button{
+background-color: yellow;
+font-weight: bold;
+font-size: 1rem;
+border-radius: 20px;
+border: 1px solid #000;
+}
+#container{
+display: flex;
+flex-direction:column;
+align-items: center;
+justify-content: center;
+margin-top: 30px;
+}
+
+#registerBox{
+	display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+	width:300px;
+	height:300px;
+	background-color: #000;
+	opacity: 80%;
+	border-radius: 30px;
+	margin-left: 20px;
+	padding: 10px;
+}
+
+#intro{
+	display: flex;
+flex-direction:column;
+align-items: center;
+justify-content: center;
+	width:600px;
+	height:300px;
+	background-color: #000;
+	opacity: 80%;
+	border-radius: 30px;
+}
+
+footer{
+color: yellow;
+font-weight: bold;
+align-items: center;
+justify-content: center;
+display: flex;
+background-color: #000;
+margin-top: 30px;
+}
+
+@media(max-width:800px){
+#loginForm{
+	flex-direction: column;
+	line-height: 1px;
+}
+#loginBox{
+height: 150px;
+}
+
+#container{
+flex-direction:column;
+}
+
+#intro{
+	width:300px;
+	height:200px;
+	border-radius: 30px;
+	margin-bottom: 10px;
+}
+
+#intro h1{
+font-size: 16px;
+}
+
+#registerBox{
+	width:200px;
+	height:300px;
+}
+
+}
