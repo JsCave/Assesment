@@ -112,14 +112,32 @@ there is a lot of leftouts , first i wanted to let customer order all he wanted 
 i learned about API and how to create them so other services can access and use my service  
 - [x] **Useful link(s) related to you or the task you may like to share with us.**  
 castleswar.com : online browsing game that i still working on it  
-Security
-how should we get your code working
+# Security
+1. store session in database for compare it with requests come from user browser.
+1. prevent CSRF Attacks using Csurf Tokens.
+1. used JWT for secure requests via API
+1. used bcryptjs for hash passwords in database
+1. used validator for Validate user inputs
 
 
+# Extra Information  
 
-#### packages used
+**packages used**  
 express 
 express-session  
 mysql  
 connect-mysql  
 validator  
+bcryptjs
+csurf
+dotenv
+ejs
+jsonwebtoken  
+
+
+
+
+
+
+
+
