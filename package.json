@@ -1,46 +1,25 @@
 {
-<<<<<<< HEAD
-  "name": "cw",
-  "version": "1.0.0",
-  "description": "",
-=======
   "name": "fatura",
   "version": "1.0.0",
   "description": "Project Description:\r about online store where merchant can create his own store",
->>>>>>> 66a244d (first commit)
   "main": "db.js",
   "scripts": {
     "watch": "nodemon",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-<<<<<<< HEAD
-  "keywords": [],
-=======
->>>>>>> 66a244d (first commit)
   "author": "",
   "license": "ISC",
   "dependencies": {
     "bcryptjs": "^2.4.3",
-<<<<<<< HEAD
-    "body-parser": "^1.19.0",
-    "connect-mysql": "^4.0.0",
-    "cookie-parser": "^1.4.5",
-    "ejs": "^3.1.6",
-    "express": "^4.17.1",
-    "express-session": "^1.17.2",
-    "mysql": "^2.18.1",
-    "nodemon": "^2.0.12",
-=======
     "connect-mysql": "^4.0.0",
     "csurf": "^1.11.0",
+    "dotenv": "^10.0.0",
     "ejs": "^3.1.6",
     "express": "^4.17.1",
     "express-session": "^1.17.2",
     "jsonwebtoken": "^8.5.1",
     "mysql": "^2.18.1",
     "nodemon": "^2.0.13",
-    "dotenv": "^10.0.0",
->>>>>>> 66a244d (first commit)
     "validator": "^13.6.0"
   }
 }
