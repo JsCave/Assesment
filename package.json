@@ -1,7 +1,7 @@
 {
-  "name": "fatura",
+  "name": "Food Fumes",
   "version": "1.0.0",
-  "description": "Project Description:\r about online store where merchant can create his own store",
+  "description": "Project Description:\r about online Fast Food Service",
   "main": "db.js",
   "scripts": {
     "watch": "nodemon",
@@ -12,6 +12,7 @@
   "dependencies": {
     "bcryptjs": "^2.4.3",
     "connect-mysql": "^4.0.0",
+    "cors": "^2.8.5",
     "csurf": "^1.11.0",
     "dotenv": "^10.0.0",
     "ejs": "^3.1.6",
