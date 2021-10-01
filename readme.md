@@ -113,7 +113,8 @@ there is a lot of leftouts , first i wanted to let customer order all he wanted 
 - [x] **Tell us about something you learned during the coarse of this task.**  
 i learned about API and how to create them so other services can access and use my service  
 - [x] **Useful link(s) related to you or the task you may like to share with us.**  
-castleswar.com : online browsing game that i still working on it  
+https://castleswar.com/ : online browsing game that i still working on it , where players can exchange messages and recieve reports like (war report) , build armies , move units on map. built using Node
+http://fxpropfirms.com/ : service that show firms that offer funding services and data of each firm , built using PHP&Mysql
 # Security
 1. store session in database for compare it with requests come from user browser.
 1. prevent CSRF Attacks using Csurf Tokens.
