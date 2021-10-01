@@ -104,6 +104,8 @@ Note(don't forget to keep xampp server running with mysql so our app can access 
 ![set1](https://warfumes.com/pics/set1.jpeg) 
 2-you don't need .env file instead you can insert enviroment variable from Node Apps at hosting  
 ![set2](https://warfumes.com/pics/set2.jpeg) 
+3-after upload files into folder of node project don't forget to run NPM for instal packages in json file  
+![set2](https://warfumes.com/pics/set3.jpeg) 
 
 
 
