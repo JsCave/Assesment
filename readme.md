@@ -122,19 +122,7 @@ castleswar.com : online browsing game that i still working on it
 1. used validator for Validate user inputs
 
 
-# Extra Information  
 
-**packages used**  
-express 
-express-session  
-mysql  
-connect-mysql  
-validator  
-bcryptjs
-csurf
-dotenv
-ejs
-jsonwebtoken  
 
 
 
