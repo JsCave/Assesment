@@ -16,7 +16,7 @@ const  options = {
       }
 };
 
-let sessionOptions=session({
+let sessionOptions=session({                //used for store session and cookie at database
   secret:process.env.SECRET,
   store: new MysqlStore(options),
   resave:false,
@@ -27,12 +27,12 @@ let sessionOptions=session({
 
 app.use(sessionOptions);
 
-app.use(function(req,res,next){
+app.use(function(req,res,next){             //that use for make access to data that display to user more easy instead of send it every time user making request
 res.locals.user=req.session.user
 next();
 })
 
-app.use(csurf())
+app.use(csurf())      //use csurf package for forbin csrf attacks
 
 app.use(function(req,res,next){
 res.locals.csrfToken=req.csrfToken()
@@ -47,7 +47,7 @@ app.set('view engine', 'ejs')
 
 app.use('/',router)
 
-app.use(function(err,req,res,next){
+app.use(function(err,req,res,next){         //if dedect csrf attack , put error at action session for display
 if(err){
 if(err.code=="EBADCSRFTOKEN"){
   req.session.action=['CROSS SITE REQUEST FORGERY DETECTED']
