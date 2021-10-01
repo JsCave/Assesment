@@ -82,7 +82,7 @@ Here screenshot using PostMan:
 
 ## how should we get your code working  
 **option1:** you can test it at your local server , 
-1-by download xampp for example then you need to go to phpmyadmin and create database and import foodfumes.sql file 
+1-by download xampp for example then you need to go to phpmyadmin and create database and import databaseStructure.sql file 
 for create all tables and data.  
 2-use npm install for download packages from package.json  
 3-create file and give it extension only .env , or you can download it directly from repositry and change variables to your mysql connection data:  
@@ -95,6 +95,7 @@ PORT=3000
 SECRET=if really don't know
 SIGNATURE=idon'tknowif4*fishequal2
 ```  
+**Note:**better to change SECRET and SIGNATURE , i just keep it for project purpose , also be sure you use same MYSQL enviroment variable names**  
 Now it's ready and you can run it using npm run watch or node db.js 
 Note(don't forget to keep xampp server running with mysql so our app can access to app)
 
