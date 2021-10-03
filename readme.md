@@ -97,7 +97,7 @@ SIGNATURE=idon'tknowif4*fishequal2
 ```  
 **Note:**better to change SECRET and SIGNATURE , i just keep it for project purpose , also be sure you use same MYSQL enviroment variable names**  
 Now it's ready and you can run it using npm run watch or node db.js 
-Note(don't forget to keep xampp server running with mysql so our app can access to app)
+Note(don't forget to keep xampp server running with mysql so our app can access to database)
 
 **Option2:** in case you decided to deploy site online to your hosting:  
 1-go to control panel and choose setup Node and follow steps for create Node App  
